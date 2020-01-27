@@ -28,9 +28,9 @@ class JWTAuthentication(authentication.BaseAuthentication):
         if prefix.lower() != auth_header_prefix:
             return None
 
-        return self._authernticate_credentials(request, token)
+        return self._authenticate_credentials(request, token)
 
-    def _authernticate_credentials(self, request, token):
+    def _authenticate_credentials(self, request, token):
         try:
             payload = jwt.decode(token, settings.SECRET_KEY)
         except:
