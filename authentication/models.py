@@ -5,21 +5,21 @@ from django.contrib.auth.base_user import BaseUserManager, AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 from django.db import models
 
-# Create your models here.
-from phonenumber_field.formfields import PhoneNumberField
+from phonenumber_field.modelfields import PhoneNumberField
 
 from TremyServer import settings
 
 
+# Create your models here.
 class UserManager(BaseUserManager):
-    def create_user(self, username, email, password=None):
+    def create_user(self, username, email, phone_number, password=None):
         if username is None:
             raise TypeError('User must have a username.')
 
         if email is None:
             raise TypeError('User must have an email.')
 
-        user = self.model(username=username, email=self.normalize_email(email))
+        user = self.model(username=username, email=self.normalize_email(email), phone_number=phone_number)
         user.set_password(password)
         user.save()
 
@@ -35,6 +35,7 @@ class UserManager(BaseUserManager):
         user.save()
 
         return user
+
 
 class User(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(db_index=True, max_length=255, unique=True)
