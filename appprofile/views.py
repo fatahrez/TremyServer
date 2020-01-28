@@ -14,7 +14,7 @@ from authentication.serializers import LoginSerializer
 class ProfileView(APIView):
 
     @staticmethod
-    def get():
+    def get(self):
         profiles = Profile.objects.all()
         return Response(ProfileSerializer(profiles, many=True).data)
 
