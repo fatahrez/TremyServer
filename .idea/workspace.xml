@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19f69368-debe-4808-a76c-1ce970e7914b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/memes/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TremyServer/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TremyServer/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/memes/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="19f69368-debe-4808-a76c-1ce970e7914b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +113,7 @@
       <workItem from="1580119379645" duration="8723000" />
       <workItem from="1580157625510" duration="5877000" />
       <workItem from="1580198373706" duration="6023000" />
-      <workItem from="1580384750086" duration="1689000" />
+      <workItem from="1580384750086" duration="1969000" />
     </task>
     <servers />
   </component>
