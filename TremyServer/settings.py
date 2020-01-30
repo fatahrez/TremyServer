@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'authentication.apps.AuthenticationConfig',
     'appprofile.apps.AppprofileConfig',
     'core.apps.CoreConfig',
+    'memes.apps.MemesConfig',
 ]
 
 MIDDLEWARE = [
