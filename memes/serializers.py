@@ -18,3 +18,15 @@ class MemeSerializerCreate(serializers.ModelSerializer):
         model = Meme
         fields = '__all__'
 
+
+class MemeSerializerUpdate(serializers.ModelSerializer):
+
+    class Meta:
+        model = Meme
+        exclude = ('user',)
+
+    def validate(self, data):
+
+        if self.instance.user != self.context['request'].user:
+            raise serializers.ValidationError('You can not edit posts from other users')
+        return data
