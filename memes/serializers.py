@@ -30,3 +30,7 @@ class MemeSerializerUpdate(serializers.ModelSerializer):
         if self.instance.user != self.context['request'].user:
             raise serializers.ValidationError('You can not edit posts from other users')
         return data
+
+
+class MemeSerializerFull(MemeSerializer):
+    pass
