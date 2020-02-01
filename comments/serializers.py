@@ -21,3 +21,14 @@ class MemeCommentSerializerCreate(serializers.ModelSerializer):
         if user != self.context['request'].user:
             raise serializers.ValidationError("you cannot create comments for other users")
         return user
+
+
+class MemeCommentSerializerUpdate(serializers.ModelSerializer):
+    class Meta:
+        model = MemeComment
+        exclude = ('user', 'meme')
+
+    def validate(self, data):
+        if self.instance.user != self.context['request'].user:
+            raise serializers.ValidationError("You cannot update other user's comments")
+        return data
