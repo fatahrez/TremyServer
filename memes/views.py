@@ -32,13 +32,13 @@ class MemeDetail(APIView):
 
     @staticmethod
     def get(request, meme_id):
-        meme = get_object_or_404(Meme, meme_id)
+        meme = get_object_or_404(Meme, pk=meme_id)
 
         return Response(MemeSerializerFull(meme).data)
 
     @staticmethod
     def patch(request, meme_id):
-        meme = get_object_or_404(Meme, meme_id)
+        meme = get_object_or_404(Meme, pk=meme_id)
 
         serializer = MemeSerializerUpdate(meme, data=request.data, context={'request': request}, partial=True)
         if serializer.is_valid():
@@ -48,7 +48,7 @@ class MemeDetail(APIView):
 
     @staticmethod
     def delete(request, meme_id):
-        meme = get_object_or_404(Meme, meme_id)
+        meme = get_object_or_404(Meme, pk=  meme_id)
 
         if meme.user != request.user:
             return Response(status=status.HTTP_401_UNAUTHORIZED)
