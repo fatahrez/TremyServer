@@ -11,3 +11,13 @@ class MemeCommentSerializer(serializers.ModelSerializer):
         model = MemeComment
         fields = '__all__'
 
+
+class MemeCommentSerializerCreate(serializers.ModelSerializer):
+    class Meta:
+        model = MemeComment
+        fields = '__all__'
+
+    def validate(self, user):
+        if user != self.context['request'].user:
+            raise serializers.ValidationError("you cannot create comments for other users")
+        return user
