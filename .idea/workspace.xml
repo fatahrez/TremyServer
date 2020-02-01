@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19f69368-debe-4808-a76c-1ce970e7914b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TremyServer/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TremyServer/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="19f69368-debe-4808-a76c-1ce970e7914b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,7 @@
       <workItem from="1580198373706" duration="6023000" />
       <workItem from="1580384750086" duration="3197000" />
       <workItem from="1580502162289" duration="2512000" />
-      <workItem from="1580528921791" duration="4037000" />
+      <workItem from="1580528921791" duration="4297000" />
     </task>
     <servers />
   </component>
