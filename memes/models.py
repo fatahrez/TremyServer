@@ -7,7 +7,7 @@ from core.models import CreatedModified
 # Create your models here.
 class Meme(CreatedModified):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    body = models.CharField(max_length=300)
+    body = models.TextField(max_length=300)
     image = models.ImageField(blank=True)
 
     class Meta:
