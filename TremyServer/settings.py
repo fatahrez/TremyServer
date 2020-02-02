@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'appprofile.apps.AppprofileConfig',
     'core.apps.CoreConfig',
     'memes.apps.MemesConfig',
+    'comments.apps.CommentsConfig',
 ]
 
 MIDDLEWARE = [
