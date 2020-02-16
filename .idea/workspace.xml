@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="19f69368-debe-4808-a76c-1ce970e7914b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/memes/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TremyServer/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TremyServer/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/memes/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,6 +165,7 @@
       <workItem from="1580384750086" duration="3197000" />
       <workItem from="1580502162289" duration="2512000" />
       <workItem from="1581879745713" duration="3081000" />
+      <workItem from="1581891053676" duration="208000" />
     </task>
     <servers />
   </component>
