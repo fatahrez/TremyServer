@@ -3,6 +3,8 @@ from django.db import models
 from TremyServer import settings
 from core.models import CreatedModified
 
+from laugh.models import Laugh
+
 
 # Create your models here.
 class Meme(CreatedModified):
@@ -15,3 +17,7 @@ class Meme(CreatedModified):
 
     def __str__(self):
         return self.body
+
+    @property
+    def get_laughs_count(self):
+        return Laugh.objects.filter(meme=self).count()

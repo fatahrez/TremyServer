@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'memes.apps.MemesConfig',
     'comments.apps.CommentsConfig',
+    'laugh.apps.LaughConfig',
 ]
 
 MIDDLEWARE = [
