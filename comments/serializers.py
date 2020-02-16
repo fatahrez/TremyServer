@@ -17,7 +17,7 @@ class MemeCommentSerializerCreate(serializers.ModelSerializer):
         model = MemeComment
         fields = '__all__'
 
-    def validate(self, user):
+    def validate_user(self, user):
         if user != self.context['request'].user:
             raise serializers.ValidationError("you cannot create comments for other users")
         return user

@@ -25,11 +25,11 @@ class UserManager(BaseUserManager):
 
         return user
 
-    def create_superuser(self, username, email, password):
+    def create_superuser(self, username, email, phone_number, password, **extra_fields):
         if password is None:
             raise TypeError('Superuser must have a password')
 
-        user = self.create_user(username, email, password)
+        user = self.create_user(username, email, phone_number, password)
         user.is_superuser = True
         user.is_staff = True
         user.save()
@@ -48,7 +48,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     updated_at = models.DateTimeField(auto_now=True)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username']
+    REQUIRED_FIELDS = ['username', "phone_number"]
 
     objects = UserManager()
 
