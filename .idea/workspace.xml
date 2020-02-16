@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19f69368-debe-4808-a76c-1ce970e7914b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/comments/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TremyServer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/TremyServer/urls.py" afterDir="false" />
     </list>
@@ -113,7 +114,7 @@
       <workItem from="1580198373706" duration="6023000" />
       <workItem from="1580384750086" duration="3197000" />
       <workItem from="1580502162289" duration="2512000" />
-      <workItem from="1581879745713" duration="2478000" />
+      <workItem from="1581879745713" duration="3081000" />
     </task>
     <servers />
   </component>
