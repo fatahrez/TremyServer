@@ -25,11 +25,11 @@ class UserManager(BaseUserManager):
 
         return user
 
-    def create_superuser(self, username, phone_number, email, password, **extra_fields):
+    def create_superuser(self, username, email, phone_number, password, **extra_fields):
         if password is None:
             raise TypeError('Superuser must have a password')
 
-        user = self.create_user(username, phone_number, email, password)
+        user = self.create_user(username, email, phone_number, password)
         user.is_superuser = True
         user.is_staff = True
         user.save()
