@@ -1,6 +1,5 @@
 from django.db import models
 
-<<<<<<< HEAD
 from TremyServer import settings
 from core.models import CreatedModified
 
@@ -24,6 +23,3 @@ class MemeComment(Comment):
 
     def __str__(self):
         return self.body
-=======
-# Create your models here.
->>>>>>> functionality-memes
