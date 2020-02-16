@@ -1,14 +1,21 @@
 from rest_framework import serializers
 from authentication.serializers import UserSerializer
+from comments.models import MemeComment
+from comments.serializers import MemeCommentSerializer
 from memes.models import Meme
 
 
 class MemeSerializer(serializers.ModelSerializer):
+    meme_comments_count = serializers.SerializerMethodField()
     user = UserSerializer()
 
     class Meta:
         model = Meme
         fields = '__all__'
+
+    @staticmethod
+    def get_meme_comments_count(meme):
+        return MemeComment.objects.filter(meme=meme).count()
 
 
 class MemeSerializerCreate(serializers.ModelSerializer):
@@ -33,4 +40,4 @@ class MemeSerializerUpdate(serializers.ModelSerializer):
 
 
 class MemeSerializerFull(MemeSerializer):
-    pass
+    meme_comments = MemeCommentSerializer(many=True, read_only=True)

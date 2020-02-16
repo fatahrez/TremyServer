@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="19f69368-debe-4808-a76c-1ce970e7914b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TremyServer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/TremyServer/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,12 +22,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="tremy_server@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -118,7 +113,7 @@
       <workItem from="1580198373706" duration="6023000" />
       <workItem from="1580384750086" duration="3197000" />
       <workItem from="1580502162289" duration="2512000" />
-      <workItem from="1580528921791" duration="5745000" />
+      <workItem from="1581879745713" duration="2478000" />
     </task>
     <servers />
   </component>
